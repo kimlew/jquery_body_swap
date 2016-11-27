@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <title>Body Swap</title>
+    <link rel="stylesheet" type="text/css" href="styles/body_swap.css">
+  </head>
+
+  <body>
+    <header id="top">
+      <h2>Body Swap</h2>
+				<p>Click on the picture to swap body parts.</p>
+
+				<!-- Interface buttons for randomize and reset behaviours -->
+	      <button id="btnRandom">Random Body Swap</button>
+	      <button id="btnReset">Reset</button>
+    </header>
+		
+    <div id="container">
+      <div id="frame">
+
+        <div id="pic_box">
+          <div id="head" class="body"><img src="images/headsstrip.svg"></div>
+          <div id="torso" class="body"><img src="images/torsosstrip.svg"></div>
+          <div id="leg" class="body"><img src="images/legsstrip.svg"></div>
+        </div> <!-- End of <div class="pic_box" -->
+
+      </div> <!-- End of <div class="frame" -->
+    </div> <!-- End of <div id="container"> -->
+
+    <script type="text/javascript" src="scripts/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="scripts/body_swap.js"></script>
+  </body>
+</html>

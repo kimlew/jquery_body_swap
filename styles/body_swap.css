@@ -1,0 +1,97 @@
+/*** Body Swap ***/
+
+h2 {
+  color: #000000; /* black text */
+}
+
+body {
+	background-color: #ADD8E6; /* light blue: ADD8E6 */
+}
+
+p {
+	color: #000000;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+/* When animating element position - must use absolute or relative positioning
+
+z-index is stack order:
+  0 - .body, #container
+  1 - #pic_box 
+  2 - #frame
+  3 - #top_text, #top
+*/ 
+#top-text {
+	position: relative;
+	z-index: 3;
+}
+
+#top {
+	position: absolute;
+	left: 100px;
+	top: 10px;
+	z-index: 3;
+}
+
+/* container - houses frame + pic_box */
+#container {
+	position: absolute;
+	left: 50px;
+	top: 150px;
+	z-index: 0;
+}
+
+/* overflow: property to hidden - lets you hide the part of the image strip 
+  that extends beyond #frame and #pic_box area
+*/
+#frame {
+  position: absolute;
+	width: 700px;
+	height: 400px;
+	left: 50px;
+  top: 50px;
+  background-image: url(../images/grey_frame.svg);
+  z-index: 2;
+  overflow: hidden;
+}
+
+#pic_box {
+  background-color: #FFFFFF;
+  position: relative;
+	width: 200px;
+	height: 300px;
+  left: 50px;
+  top: 50px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.body {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+}
+
+/* Each strip is 600px in total. Show only 200px at a time. */
+#head {
+  width: 200px;
+  height: 100px;
+}
+
+#torso {
+  width: 200px;
+  height: 100px;
+}
+
+#leg {
+  width: 200px;
+  height: 100px;
+}
+
+
+
+
+
+
