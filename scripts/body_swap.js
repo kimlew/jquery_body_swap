@@ -26,7 +26,7 @@ $(document).ready(function() {
   // place - easier to fix if something is wrong
   function moveThisBodyPart(i, thisBodyPart) {
     if  (clicksArrayStarts0s[i] < 2) { // Cycles back to the beginning pic.
-      $(thisBodyPart).animate({left:"-=200px"}, 500);
+      $(thisBodyPart).animate({left:"-="+bodyPartWidth+"px"}, 500);
       clicksArrayStarts0s[i] = clicksArrayStarts0s[i]+1;
     }
     else {
