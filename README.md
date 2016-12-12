@@ -3,6 +3,7 @@
 This is a short game using jQuery, JavaScript, HTML and CSS.
 
 To play the game:
+
 1. Go to:  
 http://www.kimlew.com/prog_proj/jquery_body_swap/body_swap.html
 
